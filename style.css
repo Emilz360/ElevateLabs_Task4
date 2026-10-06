@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+.header {
+    height: 80px;
+    padding: 0 70px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #3155d8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #172033;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #3155d8;
+}
+
+.nav-button {
+    background: #3155d8;
+    color: white;
+
+    border: none;
+    padding: 12px 22px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.hero {
+    width: 1200px;
+    margin: 70px auto;
+
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.small-title {
+    color: #3155d8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #3155d8;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #596579;
+
+    width: 550px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 14px 25px;
+    border-radius: 6px;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.primary-button {
+    background: #3155d8;
+    color: white;
+
+    border: 2px solid #3155d8;
+
+    margin-right: 12px;
+}
+
+.secondary-button {
+    background: white;
+    color: #3155d8;
+
+    border: 2px solid #3155d8;
+}
+
+.hero-image {
+    width: 45%;
+}
+
+.image-box {
+    width: 480px;
+    height: 380px;
+
+    background: #172033;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.code-symbol {
+    font-size: 80px;
+    color: #4d70ff;
+    font-weight: bold;
+}
+
+.image-box h2 {
+    font-size: 40px;
+    letter-spacing: 8px;
+    margin: 10px 0;
+}
+
+.image-box p {
+    color: #aab4ca;
+    letter-spacing: 3px;
+}
+
+.services {
+    background: white;
+
+    padding: 80px 70px;
+
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.section-heading > p:last-child {
+    color: #687386;
+}
+
+.service-container {
+    width: 1100px;
+    margin: 50px auto 0;
+
+    display: flex;
+    gap: 30px;
+}
+
+.service-card {
+    width: 33.33%;
+
+    padding: 35px;
+
+    background: #f5f7fb;
+
+    border-radius: 12px;
+
+    text-align: left;
+}
+
+.icon {
+    color: #3155d8;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.service-card h3 {
+    font-size: 21px;
+}
+
+.service-card p {
+    color: #687386;
+    line-height: 1.6;
+}
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    background: #172033;
+    color: #aab4ca;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    .nav-button {
+        width: 100%;
+    }
+
+    .hero {
+        width: auto;
+
+        margin: 40px 20px;
+
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .hero-text {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .description {
+        width: auto;
+
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+
+        margin: 0;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .image-box {
+        width: 100%;
+        height: 280px;
+
+        border-radius: 15px;
+    }
+
+    .code-symbol {
+        font-size: 60px;
+    }
+
+    .image-box h2 {
+        font-size: 30px;
+    }
+
+    .services {
+        padding: 60px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .service-container {
+        width: auto;
+
+        margin-top: 35px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 100%;
+
+        padding: 25px;
+    }
+
+    footer {
+        padding: 25px 15px;
+
+        font-size: 14px;
+    }
+}
