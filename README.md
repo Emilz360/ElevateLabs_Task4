@@ -2,7 +2,7 @@
 
 ## What was done
 
-This task started with a desktop-style website called **TechNova**.
+This task started with a desktop-style website called **InovaTech**.
 
 The website contains:
 - A navigation bar
